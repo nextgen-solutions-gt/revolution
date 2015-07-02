@@ -256,8 +256,8 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #2F466A; }
-a:hover	{ color: #6f6f6f; }
+a { color: #354d71; }
+a:hover	{ color: #213c67; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -632,7 +632,6 @@ Colours and backgrounds for buttons.css
 	background-image: linear-gradient(to bottom, #dbdbdb, #ffffff);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dbdbdb', EndColorStr='#ffffff')";
 	text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 rgba(188, 42, 77, 0.2);
-	color: #6b6b6b;
 }
 
 .dropdown-select:after	{ border-color: #c7c3bf; }
