@@ -1,0 +1,33 @@
+#belevelmenu-wrapper {
+	margin-top: -28px;
+	height: 36px;
+}
+
+.bevelmenu {
+    margin-top: -1000px;
+    font-size: 14px;
+    font-family: Arial;
+    padding: 0;
+    margin: auto;
+    text-align: center; /*set value to "right" for example to align menu to the right of page*/
+}
+
+.bevelmenu li {
+	list-style: none;
+	display: inline;
+}
+
+.bevelmenu li a {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: #aaaaaa;
+
+}
+
+.bevelmenu li a:hover {
+	color: #FFFFFF;
+}
+
+.bevelmenu li.active a {
+	color: #FFFFFF;
+}
