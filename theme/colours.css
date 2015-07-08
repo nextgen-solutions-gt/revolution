@@ -4,12 +4,8 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #5F6476;
-	background: #2b2b2b url("./images/background.gif") top left repeat-x;
-}
-
-body.popup-window {
-	background-color: #FFFFFF;
+	color: #4f4f4f;
+	background: #2b2b2b;
 }
 
 h1 {
@@ -17,7 +13,7 @@ h1 {
 }
 
 h2 {
-	color: #28313F;
+	color: #858585;
 }
 
 h3 {
@@ -256,8 +252,8 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #354d71; }
-a:hover	{ color: #213c67; }
+a { color: #494949; }
+a:hover	{ color: #9f1f1f; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -584,7 +580,7 @@ fieldset.polls dd div {
 ----------------------------------------*/
 .postprofile {
 	color: #666666;
-	border-color: #FFFFFF;
+	border-color: #DDDDDD;
 }
 
 .pm .postprofile {
@@ -1135,11 +1131,11 @@ input.disabled {
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:before {
-	border-color: #105289;
+	border-color: #454545;
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist li.responsive-menu.visible a.responsive-menu-link:before {
-	border-color: #D31141;
+	border-color: #9f1f1f;
 }
 
 .dropdown .dropdown-contents {
