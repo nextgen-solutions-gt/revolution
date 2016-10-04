@@ -1,0 +1,226 @@
+/* Roelof css file
+---------------------------------------- */
+
+.solidblockmenu {
+	padding-left: 135px;
+	font: bold 13px Arial;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.solidblockmenu li {
+	display: inline;
+}
+
+.solidblockmenu li a {
+	float: left;
+	color: #aaaaaa;
+	padding: 9px 11px;
+	text-decoration: none;
+}
+
+.solidblockmenu li a:hover, .solidblockmenu li .current {
+	color: #000000;
+	background: url("{T_THEME_PATH}/images/menubg.gif") no-repeat center;
+}
+
+/* Conditional CSS- For IE (inc IE7), create 1em spacing between menu and paragraph that follows*/
+p.iepara {
+	padding-top: 1em;
+}
+
+#menu3 {
+	width: 160px;
+	margin-right: 10px;
+    list-style-type: none;
+    background-color: #F0F0F0;
+    font-size: 8pt
+}
+
+#menu3 li a {
+	height: 15px;
+	text-decoration: none;
+    list-style-type: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+#menu3 li h4 {
+	height: 15px;
+	text-decoration: none;
+    padding-bottom: 6px;
+    list-style-type: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+#menu3 li a:link, #menu3 li a:visited {
+	color: #222222;
+	display: block;
+	padding: 5px 3px 5px 3px;
+    list-style-type: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+#menu3 li a:hover {
+	color: #405C95;
+	padding: 5px 3px 5px 3px;
+    list-style-type: none;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #dddddd;
+}
+
+#leftcontent {
+	float: left;
+	min-height: 3em;
+	overflow: hidden;
+    width: 73%;
+	line-height: 1.5em;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #333333;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#rightcontent {
+	float:right;
+}
+
+.bevelmenu {
+    font-size: 14px;
+    font-family: Arial;
+    padding: 0px 0;
+    height: 36px;
+    margin: auto;
+    text-align: center; /*set value to "right" for example to align menu to the right of page*/
+	background: url("{T_THEME_PATH}/images/menubg.gif") no-repeat center;
+    width: 900px; /* adjust for image width */
+}
+
+.bevelmenu li {
+	list-style: none;
+	display: inline;
+}
+
+.bevelmenu li a {
+	padding: 9px 10px;
+	text-decoration: none;
+	color: #aaaaaa;
+
+}
+
+.bevelmenu li a:hover {
+	color: #FFFFFF;
+}
+
+.bevelmenu li.active a {
+	color: #FFFFFF;
+}
+
+.aff {
+	width: 150px;
+}
+
+#afflist {
+	width: 449px;
+}
+
+#affleft {
+	float: left;
+}
+#affright {
+	float: right;
+	text-align: left;
+}
+
+/* Rounded corners for popups
+ * Inspired by: http://blog.josh420.com/archives/2007/11/how-to-create-fluid-width-div-layers-with-rounded-corners.aspx
+ */
+div.rounded {
+	background: url("{T_THEME_PATH}/images/corners/top.gif") repeat-x top;
+	margin-top: 10px;
+}
+
+/* butt is the real bottom */
+div.rounded div.butt {
+	background: url("{T_THEME_PATH}/images/corners/bottom.gif") repeat-x bottom;
+	height: 20px;
+	margin: 0px 15px;
+	margin-top: -16px;
+}
+
+div.rounded div.top {
+	background: url("{T_THEME_PATH}/images/corners/tl.gif") no-repeat bottom left;
+	padding: 0px;
+}
+
+div.rounded div.top div.right {
+	background: url("{T_THEME_PATH}/images/corners/tr.gif") no-repeat bottom right;
+	height: 12px;
+	margin-left: 12px;
+}
+
+div.rounded div.middle {
+	background: url("{T_THEME_PATH}/images/corners/left.gif") repeat-y left;
+	clear: both;
+}
+
+div.rounded div.middle div.right {
+	background: url("{T_THEME_PATH}/images/corners/right.gif") repeat-y right;
+	margin-left: 5px;
+}
+
+div.rounded div.middle div.right div.background {
+	background-color: #ffffff;
+	margin-right: 5px;
+	margin: 0px 11px;
+}
+
+div.rounded div.bottom {
+	background:url("{T_THEME_PATH}/images/corners/bl.gif") no-repeat top left;
+	clear: both;
+	width: 100%;
+}
+
+div.rounded div.bottom div.right {
+	background:url("{T_THEME_PATH}/images/corners/br.gif") no-repeat top right;
+	height: 12px;
+	margin-left: 12px;
+}
+
+/* leroys dirty corner */
+.table_bbcode {
+	border: 1px #cdd solid;
+}
+
+.table_bbcode th {
+	padding: 2px 12px;
+	text-align: left;
+	background: #cdd;
+}
+
+.table_bbcode td {
+	padding: 2px 12px;
+}
+
+dl.box_bbcode {
+	background: #eff2fa; none 6px 8px no-repeat;
+	border: 1px solid #dbdbdb;
+}
+
+dl.box_bbcode dt {
+	text-transform: uppercase;
+	border-bottom: 1px solid #cccccc;
+	margin: 0 3px 0;
+	padding: 2px 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	display: block;
+}
+
+dl.box_bbcode dd {
+	font-size: 1em;
+	margin: 0.5em 1px 0;
+	padding: 5px;
+	max-height: 250px;
+	overflow: auto;
+}
