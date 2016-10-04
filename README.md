@@ -1,5 +1,5 @@
 # revolution
-Revolution styles for phpBB 3.1.x
+Revolution style for phpBB 3.2.x
 
 ## Style Support
 
