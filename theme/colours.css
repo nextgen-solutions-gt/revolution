@@ -51,7 +51,8 @@ hr {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 #header-bg {
-	background: url("./images/header.png") top left no-repeat;
+	background: url("./images/header.png") top left;
+	background-repeat: no-repeat;
 }
 
 #wrap-bg {
@@ -284,13 +285,13 @@ a:hover	{ color: #9f1f1f; }
 }
 
 .postlink:visited {
-	border-bottom-color: #5D8FBD;
-	color: #5D8FBD;
+	border-bottom-color: #9f1f1f;
+	color: #9f1f1f;
 }
 
 .postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
+	background-color: #ECD5D8;
+	color: #9f1f1f;
 }
 
 .signature a, .signature a:hover {
@@ -892,7 +893,7 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	background-color: #eef5f9;
+	background-color: #cdcdcd;
 }
 
 dl.mini dt {

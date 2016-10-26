@@ -179,6 +179,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	max-width: 900px;
 	height: 147px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 #wrap-bg {
@@ -217,17 +218,14 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-top: 20px;
 }
 
-#footer-bg {
-	max-width: 800px;
-	height: auto;
-	margin: 0 auto;
+#footer-c{
 	padding-top: 12px;
 }
 
 .logo {
 	float: left;
 	width: auto;
-	padding: 10px 13px 0 10px;
+	padding: 40px 0 0 60px;
 }
 
 .logo:hover {
@@ -238,6 +236,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 #site-description {
 	float: left;
 	width: 65%;
+}
+
+#site-description-container{
+	display: none;
 }
 
 #site-description h1 {
