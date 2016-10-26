@@ -63,13 +63,13 @@ a:hover	{ color: #9f1f1f; }
 }
 
 .postlink:visited {
-	border-bottom-color: #5D8FBD;
-	color: #5D8FBD;
+	border-bottom-color: #9f1f1f;
+	color: #9f1f1f;
 }
 
 .postlink:hover {
-	background-color: #f6d0d0;
-	color: #730d0d;
+	background-color: #ECD5D8;
+	color: #9f1f1f;
 }
 
 .signature a, .signature a:hover {
@@ -161,7 +161,7 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 }
 
 .site_logo {
-	background-image: url("./images/site_logo.gif");
+	background-image: url("./images/revolution_logo.png");
 }
 
 /* Horizontal lists
@@ -912,7 +912,7 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	background-color: #EEF5F9;
+	background-color: #cdcdcd;
 }
 
 dl.mini dt {

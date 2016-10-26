@@ -175,7 +175,9 @@
 		padding: 10px;
 	}
 
-	.site-description h1, .site-description p {
+	.site-description h1, .site-description p, .site-description-container {
+		/* change display value to none to hidden the site-description */
+		display: inline-block;
 		text-align: inherit;
 		float: none;
 		margin: 5px;
@@ -188,6 +190,11 @@
 		display: none;
 	}
 
+	
+	.header-bg {
+		height: auto;
+	}
+	
 	/* Navigation
 	----------------------------------------*/
 	.headerbar + .navbar {
