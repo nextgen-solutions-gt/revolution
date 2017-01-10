@@ -88,11 +88,29 @@ p.right {
 }
 
 p.jumpbox-return {
-	margin-top: 1em;
+	margin-top: 10px;
+	margin-bottom: 0;
+	float: left;
 }
 
 b, strong {
 	font-weight: bold;
+}
+
+.badge {
+	border-radius: 10px;
+	opacity: 0.8;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 10px;
+	line-height: 1;
+	float: right;
+	display: inline-block;
+	margin-left: 3px;
+	vertical-align: baseline;
+	position: relative;
+	top: 3px;
+	padding: 4px 6px;
 }
 
 i, em {
@@ -359,18 +377,19 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	vertical-align: top;
 }
 
-.header-avatar:hover {
+a.header-avatar,
+a.header-avatar:hover {
 	text-decoration: none;
 }
 
-.header-avatar img {
+a.header-avatar img {
 	margin-bottom: 2px;
 	max-height: 20px;
 	vertical-align: middle;
 	width: auto;
 }
 
-.header-avatar span:after {
+a.header-avatar span:after {
 	content: '\f0dd';
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -906,8 +925,14 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 .row .pagination li a, .row .pagination li span {
 	border-radius: 2px;
-    padding: 1px 3px;
-    font-size: 9px;
+	padding: 1px 3px;
+	font-size: 9px;
+}
+
+.topic-poster {
+	float: left;
+	padding-right: 0.5em;
+	margin-top: 0.3em;
 }
 
 /* jQuery popups
@@ -1064,6 +1089,13 @@ ul.linklist:after,
 	clear: both;
 	content: '';
 	display: block;
+}
+
+.emoji {
+	min-height: 18px;
+	min-width: 18px;
+	height: 1em;
+	width: 1em;
 }
 
 .smilies {
@@ -1227,6 +1259,10 @@ ul.linklist:after,
 	margin-left: 58px;
 }
 
+.badge.hidden {
+	display: none;
+}
+
 /* Navbar specific list items
 ----------------------------------------*/
 
@@ -1236,10 +1272,6 @@ ul.linklist:after,
 
 .linklist.compact .rightside > a > span span {
 	display: none;
-}
-
-.linklist.compact .rightside > a strong {
-	padding-left: 2px;
 }
 
 .dropdown-page-jump .dropdown {
