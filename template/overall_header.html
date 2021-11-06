@@ -33,13 +33,13 @@
 <script>
 	WebFontConfig = {
 		google: {
-			families: ['Open+Sans:600:cyrillic-ext,latin,greek-ext,greek,vietnamese,latin-ext,cyrillic']
+			families: ['Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese']
 		}
 	};
 
 	(function(d) {
 		var wf = d.createElement('script'), s = d.scripts[0];
-		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+		wf.src = 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js';
 		wf.async = true;
 		s.parentNode.insertBefore(wf, s);
 	})(document);
@@ -51,11 +51,11 @@
 <link href="{T_THEME_PATH}/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="all and (max-width: 700px)">
 
 <!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
-	<link href="{T_THEME_PATH}/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
+	<link href="{ROOT_PATH}styles/prosilver/theme/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <!-- ENDIF -->
 
 <!-- IF S_PLUPLOAD -->
-	<link href="{T_THEME_PATH}/plupload.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
+	<link href="{ROOT_PATH}styles/prosilver/theme/plupload.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <!-- ENDIF -->
 
 <!-- IF S_COOKIE_NOTICE -->
@@ -63,7 +63,7 @@
 <!-- ENDIF -->
 
 <!--[if lte IE 9]>
-	<link href="{T_THEME_PATH}/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
+	<link href="{ROOT_PATH}styles/prosilver/theme/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <![endif]-->
 
 <!-- EVENT overall_header_head_append -->
@@ -79,7 +79,9 @@
 <div class="header-bg">
 <!-- EVENT overall_header_headerbar_before -->
 			<div id="site-description" class="site-description">
-				<a id="logo" class="logo" href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" title="<!-- IF U_SITE_HOME -->{L_SITE_HOME}<!-- ELSE -->{L_INDEX}<!-- ENDIF -->"><span class="site_logo"></span></a>
+				<a id="logo" class="logo" href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}{{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}">
+					<span class="site_logo"></span>
+				</a>
 			<div class="site-description-container">
 			<h1>{SITENAME}</h1>
 				<p>{SITE_DESCRIPTION}</p>
@@ -108,16 +110,6 @@
 </div>
 
 <div class="wrap-bg">
-<div class="belevelmenu-wrapper">
-	<ul class="bevelmenu">
-		<!-- IF U_SITE_HOME --><li <!-- IF SCRIPT_NAME eq 'home' -->class="bevelmenu-active"<!-- ENDIF -->><a href="{U_SITE_HOME}" title="{L_SITE_HOME}">{L_SITE_HOME}</a></li><!-- ENDIF -->
-		<li <!-- IF SCRIPT_NAME eq 'index' -->class="bevelmenu-active"<!-- ENDIF -->><a href="{U_INDEX}" title="{L_INDEX}">{L_INDEX}</a></li>
-		<!--//	<li><a href="#">Menu item 1</a></li>
-		<li><a href="#">Menu item 2</a></li>
-		<li><a href="#">Menu item 3</a></li> -->
-	</ul>
-</div>	
-
 <div id="wrap" class="wrap">
 	<a id="top" class="top-anchor" accesskey="t"></a>
 	<div id="page-header">

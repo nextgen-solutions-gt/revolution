@@ -97,6 +97,10 @@ b, strong {
 	font-weight: bold;
 }
 
+.text-strong {
+	font-weight: bold;
+}
+
 .badge {
 	border-radius: 10px;
 	opacity: 0.8;
@@ -113,7 +117,11 @@ b, strong {
 	padding: 4px 6px;
 }
 
-i, em {
+i, em {	
+	font-style: italic;
+}
+
+.text-italics {
 	font-style: italic;
 }
 
@@ -152,10 +160,7 @@ a:hover	{ text-decoration: underline; }
 }
 
 .wrap-bg {
-    border-top: 36px solid transparent;
-	border-bottom: 5px solid transparent;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+    border: 5px solid transparent;
 	border-radius: 10px;
 	max-width: 800px;
 	margin: 0 auto;
@@ -194,7 +199,7 @@ a:hover	{ text-decoration: underline; }
 .logo {
 	float: left;
 	width: auto;
-	padding: 40px 0 0 50px;
+	padding: 50px 0 0 66px;
 }
 
 .logo:hover {
@@ -202,9 +207,10 @@ a:hover	{ text-decoration: underline; }
 }
 
 .site_logo {
+	background-repeat: no-repeat;
 	display: inline-block;
-	width: 410px;
-	height: 90px;
+	width: 253px;
+	height: 55px;
 }
 
 /* Site description and logo */
@@ -697,7 +703,7 @@ table.table1 tbody th {
 
 /* Specific column styles */
 table.table1 .name		{ text-align: left; }
-table.table1 .center		{ text-align: center; }
+table.table1 .center	{ text-align: center; }
 table.table1 .reportby	{ width: 15%; }
 table.table1 .posts		{ text-align: center; width: 7%; }
 table.table1 .joined	{ text-align: left; width: 15%; }
@@ -772,7 +778,6 @@ table.info tbody th {
 }
 
 dl.details {
-	/*font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;*/
 	font-size: 1.1em;
 }
 
@@ -810,7 +815,7 @@ fieldset.fields1 dd.recipients {
 	margin-left: 1em;
 }
 
-fieldset.fields1 ul.recipients  input.button2{
+fieldset.fields1 ul.recipients  input.button2 {
 	font-size: 0.8em;
 	margin-right: 0;
 	padding: 0;
@@ -915,8 +920,8 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 /* Pagination in viewforum for multipage topics */
 .row .pagination {
-	display: block;
-	margin-top: -16px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .row .pagination > ul {
@@ -927,12 +932,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	border-radius: 2px;
 	padding: 1px 3px;
 	font-size: 9px;
-}
-
-.topic-poster {
-	float: left;
-	padding-right: 0.5em;
-	margin-top: 0.3em;
 }
 
 /* jQuery popups
@@ -1016,8 +1015,15 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Miscellaneous styles
 ---------------------------------------- */
 .copyright {
-	padding: 5px;
+	font-size: 10px;
 	text-align: center;
+	padding: 10px;
+}
+
+.footer-row {
+	font-size: 10px;
+	line-height: 1.8;
+	margin: 0;	text-align: center;
 }
 
 .small {
@@ -1270,7 +1276,7 @@ ul.linklist:after,
 	margin: 0 7px 0 0;
 }
 
-.linklist.compact .rightside > a > span span {
+.linklist.compact .rightside > a > span {
 	display: none;
 }
 
@@ -1284,6 +1290,10 @@ ul.linklist:after,
 
 .dropdown-page-jump input.tiny {
 	width: 50px;
+}
+
+.dropdown .clone.hidden {
+	display: none;
 }
 
 .dropdown .clone.hidden + li.separator {

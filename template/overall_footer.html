@@ -28,13 +28,35 @@
 <div class="footer-c">
 	<div class="copyright">
 		<!-- EVENT overall_footer_copyright_prepend -->
-		Revolution style by <a href="http://www.melvingarcia.com">Melvin García</a>
-		<br />		
-		{CREDIT_LINE}
-		<!-- IF TRANSLATION_INFO --><br />{TRANSLATION_INFO}<!-- ENDIF -->
+		Revolution style by <a href="https://www.phpbb.com/customise/db/style/revolution/">Semi_Deus</a> | <a href="https://nextgen.gt/">nextgen</a>
+		<p class="footer-row">
+			<span class="footer-copyright">{{ CREDIT_LINE }}</span>
+		</p>
+		<!-- IF TRANSLATION_INFO -->
+		<p class="footer-row">
+			<span class="footer-copyright">{{ TRANSLATION_INFO }}</span>
+		</p>
+		<!-- ENDIF -->
 		<!-- EVENT overall_footer_copyright_append -->
-		<!-- IF DEBUG_OUTPUT --><br />{DEBUG_OUTPUT}<!-- ENDIF -->
-		<!-- IF U_ACP --><br /><strong><a href="{U_ACP}">{L_ACP}</a></strong><!-- ENDIF -->
+		<p class="footer-row" role="menu">
+			<a class="footer-link" href="{{ U_PRIVACY }}" title="{{ lang('PRIVACY_LINK') }}" role="menuitem">
+				<span class="footer-link-text">{{ lang('PRIVACY_LINK') }}</span>
+			</a>
+			|
+			<a class="footer-link" href="{{ U_TERMS_USE }}" title="{{ lang('TERMS_LINK') }}" role="menuitem">
+				<span class="footer-link-text">{{ lang('TERMS_LINK') }}</span>
+			</a>
+		</p>
+		<!-- IF DEBUG_OUTPUT -->
+		<p class="footer-row">
+			<span class="footer-info">{{ DEBUG_OUTPUT }}</span>
+		</p>
+		<!-- ENDIF -->
+		<!-- IF U_ACP -->
+		<p class="footer-row">
+			<a class="footer-link text-strong" href="{{ U_ACP }}">{{ lang('ACP') }}</a>
+		</p>
+		<!-- ENDIF -->
 	</div>
 </div>
 </div>
@@ -44,13 +66,13 @@
 	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
 </div>
 
-<script type="text/javascript" src="{T_JQUERY_LINK}"></script>
-<!-- IF S_ALLOW_CDN --><script type="text/javascript">window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
-<script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
+<script src="{T_JQUERY_LINK}"></script>
+<!-- IF S_ALLOW_CDN --><script>window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery-3.6.0.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
+<script src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
 <!-- INCLUDEJS forum_fn.js -->
 <!-- INCLUDEJS ajax.js -->
 <!-- IF S_ALLOW_CDN -->
-	<script type="text/javascript">
+	<script>
 		(function($){
 			var $fa_cdn = $('head').find('link[rel="stylesheet"]').first(),
 				$span = $('<span class="fa" style="display:none"></span>').appendTo('body');
@@ -66,6 +88,7 @@
 <!-- IF S_COOKIE_NOTICE -->
 <script src="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.js?assets_version={T_ASSETS_VERSION}"></script>
 	<script>
+		if (typeof window.cookieconsent === "object") {	
 		window.addEventListener("load", function(){
 			window.cookieconsent.initialise({
 				"palette": {
@@ -80,9 +103,12 @@
 				"content": {
 					"message": "{LA_COOKIE_CONSENT_MSG}",
 					"dismiss": "{LA_COOKIE_CONSENT_OK}",
-					"link": "{LA_COOKIE_CONSENT_INFO}"
-				}
-			})});
+						"link": "{LA_COOKIE_CONSENT_INFO}",
+						"href": "{UA_PRIVACY}"
+					}
+				});
+			});
+		}
 	</script>
 <!-- ENDIF -->
 
