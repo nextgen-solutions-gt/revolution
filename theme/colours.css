@@ -89,7 +89,8 @@ a:hover	{ color: #9f1f1f; }
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .header-bg {
-	background: url("./images/header.png") no-repeat scroll left top;
+	background: url("./images/header.png") scroll left top;
+	background-repeat: no-repeat;
 }
 
 .wrap-bg {
@@ -112,7 +113,8 @@ a:hover	{ color: #9f1f1f; }
 
 .forumbg, .forabg {
 	background-image: url("./images/bg_list.gif");
-	background-color: #862c23;
+	background-repeat: no-repeat;
+	background-color: #882e24;
 }
 
 .navbar {
